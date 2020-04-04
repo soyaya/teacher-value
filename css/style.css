@@ -1,0 +1,17 @@
+body{
+    background-image:url(../images/fotografia-ges-EaCidUroyVE-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+.card{
+    background-color: rgba(10, 19, 19, 0.274)!important 
+}
+.btn {
+    background-color: rgb(19, 10, 10, 0.411) !important
+}
+.btn-facebook:focus{
+    background-color: dodgerblue !important;
+    outline-color: antiquewhite !important;
+}
