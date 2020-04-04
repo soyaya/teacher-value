@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Inline css with grid template </title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">Logo</a>
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Institution</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="margin-left: auto; width: 30%;">
+        <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"><span
+              class="glyphicon glyphicon-log-in"></span>Signup as an Agent </a>
+          <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+            <form class="form-horizontal" method="post" accept-charset="UTF-8">
+              <input id="sp_uname" class="form-control login" type="text" name="sp_uname" placeholder="First name" />
+
+              <input id="sp_uname" class="form-control login" type="text" name="sp_uname" placeholder="Lastname" />
+              <input id="sp_uname" class="form-control login" type="text" name="sp_uname" placeholder="Email" />
+              <input id="sp_pass" class="form-control login" type="password" name="sp_pass" placeholder="Password.." />
+              <input id="sp_pass" class="form-control login" type="password" name="sp_pass" placeholder="Password.." />
+              <input class="btn btn-primary" type="submit" name="submit" value="signup" /></form>
+          </div>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"><span
+              class="glyphicon glyphicon-log-in"></span> Login</a>
+          <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+            <form class="form-horizontal" method="post" accept-charset="UTF-8">
+              <input id="sp_uname" class="form-control login" type="text" name="sp_uname" placeholder="Email.." />
+              <input id="sp_pass" class="form-control login" type="password" name="sp_pass" placeholder="Password.." />
+              <input class="btn btn-primary" type="submit" name="submit" value="login" />
+            </form>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="fine"
+      style="background-image: url(fine.jpg); height: 30rem;background-position:left;background-size: 1200px; background-repeat:no-repeat; width: 100%;">
+      <a href=""><button class="btn-success">Apply Now</button></a>
+
+
+      <div style="display: flex; justify-content:center;">
+        <input type="search" name="search"
+          style="width: 60%; height:4rem; border-radius:10px; margin-top: 5rem;"><button class="btn-success"
+          style="margin-top: 5rem; border-radius: 5px; width: 7rem;">Search</button>
+
+
+
+      </div>
+
+    </div>
+
+    <div>
+      <div style="display: grid;grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                        grid-gap: 5rem;
+                        width: 100%;
+                        margin-top: 4rem; margin-left: 4rem;">
+        <div>
+          <h4><i class="fa fa-train" aria-hidden="true"></i> Trainings</h4>
+          <img src="fine.jpg" alt="" style="width: 150px;height: 150px; border-radius: 5rem;">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis impedit voluptatum est dicta assumenda.
+            Repellendus dolore eaque culpa ducimus harum nisi commodi earum. Esse, alias deleniti libero rerum unde
+            ullam.</p><a href="">Learn more</a>
+        </div>
+        <div>
+          <h4><i class="fa fa-television" aria-hidden="true"></i> Events</h4>
+          <img src="proj.jpg" alt="" style="width: 150px;height: 150px; border-radius: 5rem;">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non obcaecati odio repellendus iusto
+            sapiente nisi? Soluta totam repellat unde necessitatibus maiores aliquam non sed laboriosam, natus, corrupti
+            eligendi consectetur!</p><a href="">Learn more</a>
+        </div>
+        <div>
+          <h4><i class="fa fa-object-group" aria-hidden="true"></i> Jobs</h4>
+          <img src="beuty.jpg" alt="" style="width: 150px;height: 150px; border-radius: 5rem;">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil quas deserunt nobis corporis facilis
+            laudantium ullam illo minus repudiandae libero eum, illum error consequatur! Magni voluptatibus fugiat illum
+            aspernatur.</p><a href="">Learn more</a>
+        </div>
+      </div>
+
+      <div style="display: grid;grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                        grid-gap: 5rem;
+                        width: 100%;
+                        margin-top: 4rem; margin-left: 4rem;">
+        <div>
+          <h4><i class="fa fa-train" aria-hidden="true"></i> Schools</h4>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis impedit voluptatum est dicta assumenda.
+            Repellendus dolore eaque culpa ducimus harum nisi commodi earum. Esse, alias deleniti libero rerum unde
+            ullam.</p><button class="btn-primary">Learn More</button>
+        </div>
+        <div>
+          <h4><i class="fa fa-television" aria-hidden="true"></i> Events</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non obcaecati odio repellendus iusto
+            sapiente nisi? Soluta totam repellat unde necessitatibus maiores aliquam non sed laboriosam, natus, corrupti
+            eligendi consectetur!</p><button class="btn-primary">Learn More</button>
+        </div>
+        <div>
+          <h4><i class="fa fa-object-group" aria-hidden="true"></i> Application</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil quas deserunt nobis corporis facilis
+            laudantium ullam illo minus repudiandae libero eum, illum error consequatur! Magni voluptatibus fugiat illum
+            aspernatur.</p><button class="btn-primary">Learn More</button>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
